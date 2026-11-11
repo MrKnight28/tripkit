@@ -1,0 +1,47 @@
+/* ===== v1.19 country themes — body[data-theme=jp|th|uk], set by applyTheme() ===== */
+.top{position:relative;overflow:hidden}
+.top>*{position:relative;z-index:1}
+.top::after{content:attr(data-wm);position:absolute;right:86px;top:50%;transform:translateY(-50%);font:900 46px/1 "Noto Serif CJK JP","Noto Serif Thai","Noto Serif",serif;opacity:0;pointer-events:none;white-space:nowrap;z-index:0}
+.top::before{content:"";position:absolute;inset:0;opacity:0;pointer-events:none;z-index:0}
+
+/* ---------- Japan: sumi indigo + torii vermilion ---------- */
+body[data-theme=jp]{--bg:#10142a;--panel:#191f3d;--panel2:#222a4f;--line:#2c3561;--text:#f1ede4;--muted:#9aa2c4;--accent:#e2432a;--warn:#e9b44c}
+body[data-theme=jp] .top{background:#141a36;border-bottom:2px solid var(--accent)}
+body[data-theme=jp] .top::before{opacity:.13;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Cg fill='none' stroke='%23f1ede4' stroke-width='1.2'%3E%3Cpath d='M0 20a20 20 0 0 1 40 0M6 20a14 14 0 0 1 28 0M12 20a8 8 0 0 1 16 0M-20 10a20 20 0 0 1 40 0M20 10a20 20 0 0 1 40 0M-14 10a14 14 0 0 1 28 0M26 10a14 14 0 0 1 28 0'/%3E%3C/g%3E%3C/svg%3E") 0 0/40px 20px}
+body[data-theme=jp] .top::after{opacity:.16;color:#fff}
+body[data-theme=jp] .top h1,body[data-theme=jp] .gtitle,body[data-theme=jp] .hero2 b,body[data-theme=jp] .sec h2{font-family:"Noto Serif","Noto Serif CJK JP",serif}
+body[data-theme=jp] .sec h2{color:var(--text);letter-spacing:2px;display:flex;align-items:center;gap:8px}
+body[data-theme=jp] .sec h2::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--accent)}
+body[data-theme=jp] .hero2{background:linear-gradient(120deg,#5a1a1a 0%,#2a1f45 55%,#191f3d);border:0;position:relative;overflow:hidden}
+body[data-theme=jp] .hero2::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:var(--accent);opacity:.18}
+body[data-theme=jp] .chip.on{background:var(--accent);border-color:var(--accent)}
+body[data-theme=jp] .trow,body[data-theme=jp] .gcard{border-radius:4px 14px 4px 14px;border-left:3px solid var(--accent)}
+body[data-theme=jp] .tabs{background:#141a36;border-top:2px solid var(--line)}
+body[data-theme=jp] .tabs button.on span{background:var(--accent);color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:16px}
+body[data-theme=jp] .gnum{border-radius:6px}
+body[data-theme=jp] .badge{background:#1f2a52;border-color:#33407a;color:#cfd6ff}
+
+/* ---------- Thailand: temple emerald + gold ---------- */
+body[data-theme=th]{--bg:#0b1d1a;--panel:#112b26;--panel2:#173830;--line:#22463d;--text:#f6f0dc;--muted:#a3b8a8;--accent:#d9a032;--warn:#f0c24b;--ok:#5fd69a}
+body[data-theme=th] .top{background:linear-gradient(180deg,#123029,#0e2420);border-bottom:2px solid var(--accent)}
+body[data-theme=th] .top::before{opacity:.16;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cg fill='none' stroke='%23d9a032' stroke-width='1.1'%3E%3Cpath d='M14 2l12 12-12 12L2 14z'/%3E%3Cpath d='M14 8c3 3 3 6 0 9c-3-3-3-6 0-9z'/%3E%3Ccircle cx='14' cy='20' r='1.4' fill='%23d9a032'/%3E%3C/g%3E%3C/svg%3E") 0 0/28px 28px}
+body[data-theme=th] .top::after{opacity:.2;color:var(--accent);font-family:"Noto Serif Thai","Noto Sans Thai",serif;font-size:38px}
+body[data-theme=th] .top h1,body[data-theme=th] .gtitle,body[data-theme=th] .hero2 b{font-family:"Noto Serif","Noto Serif Thai",serif;color:#f3d48a}
+body[data-theme=th] .sec h2{color:var(--accent);letter-spacing:2px}
+body[data-theme=th] .sec h2::after{content:" ❖";font-size:10px}
+body[data-theme=th] .hero2{background:linear-gradient(120deg,#6b4a12 0%,#1d4036 60%,#112b26);border:1px solid #8a6a26}
+body[data-theme=th] .chip.on,body[data-theme=th] .btn.pri{background:linear-gradient(180deg,#f0c24b,#c98d22);border-color:#c98d22;color:#1b1406;font-weight:700}
+body[data-theme=th] .trow,body[data-theme=th] .gcard{border:1px solid #2b5247;box-shadow:inset 0 1px 0 #ffffff0a;border-radius:14px}
+body[data-theme=th] .trow .time{color:var(--accent);font-weight:700}
+body[data-theme=th] .tabs{background:#0e2420;border-top:2px solid #8a6a26}
+body[data-theme=th] .tabs button.on{color:#f0c24b}
+body[data-theme=th] .tabs button.on span{text-shadow:0 0 12px #f0c24b99}
+body[data-theme=th] .gnum{border-color:#8a6a26}
+body[data-theme=th] .badge{background:#173830;border-color:#2f5b4f}
+
+/* ---------- Home (UK): slate + post-box red ---------- */
+body[data-theme=uk]{--bg:#121619;--panel:#1b2125;--panel2:#242b30;--line:#30393f;--accent:#d6303a}
+body[data-theme=uk] .top{border-bottom:2px solid var(--accent)}
+body[data-theme=uk] .hero2{background:linear-gradient(120deg,#3a1518,#1b2125 60%)}
+
+body[data-theme=th] .top::after{font-size:30px;right:78px}

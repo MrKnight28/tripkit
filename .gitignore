@@ -1,0 +1,16 @@
+# signing keys never go in git
+apk/signing/
+*.keystore
+*.jks
+*.env
+# build output
+apk/build/
+apk/assets/
+dist/*.idsig
+# personal trip exports
+*backup*.json
+tripkit-*.json
+# test output
+tests/out/
+__pycache__/
+node_modules/

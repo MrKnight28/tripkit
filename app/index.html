@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1720">
+<title>TripKit</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="themes.css">
+</head>
+<body>
+<div id="splash">
+  <div class="sp-in">
+    <svg class="sp-route" viewBox="0 0 320 110" aria-hidden="true">
+      <path class="sp-path" d="M18 78 C 80 10, 140 10, 172 62 S 250 96, 302 30" />
+      <g class="sp-dots"><circle cx="18" cy="78" r="5"/><circle cx="162" cy="48" r="5"/><circle cx="206" cy="91" r="5"/><circle cx="302" cy="30" r="5"/></g>
+      <g class="sp-lbl"><text x="18" y="100">LDN</text><text x="150" y="30">HKT</text><text x="222" y="108">BKK</text><text x="300" y="14">TYO</text></g>
+    </svg>
+    <img class="sp-icon" src="icons/icon-192.png" alt="">
+    <h1>TripKit</h1>
+    <div class="sp-trip" id="spTrip">Thailand &amp; Tokyo</div>
+    <div class="sp-big" id="spBig"></div>
+    <div class="sp-sub" id="spSub"></div>
+  </div>
+  <div class="sp-foot"><span id="spNet">✓ works offline</span> · tap to skip</div>
+</div>
+<header class="top">
+  <div>
+    <h1 id="tripTitle">TripKit</h1>
+    <div class="sub" id="tripSub"></div>
+  </div>
+  <span id="netBadge" class="badge">online</span>
+</header>
+
+<main id="view"></main>
+
+<nav class="tabs">
+  <button data-tab="today" class="on"><span>◷</span>Today</button>
+  <button data-tab="guide"><span>➜</span>Guide</button>
+  <button data-tab="map"><span>⌖</span>Map</button>
+  <button data-tab="trip"><span>☰</span>Trip</button>
+</nav>
+
+<dialog id="dlg"><form method="dialog" id="dlgForm"></form></dialog>
+
+<script src="vendor/maplibre-gl.js"></script>
+<script src="demo-trip.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
