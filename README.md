@@ -4,6 +4,8 @@
 
 TripKit is a trip planner for Android that **keeps working with no signal**. It was built for a two-week trip through Thailand and Tokyo, where phone data is patchy, metro stations are underground and the map app you rely on stops loading at the worst moment.
 
+<p align="center"><img src="docs/images/demo.gif" width="300" alt="TripKit demo"></p>
+
 Think of it as a printed itinerary that also knows the way:
 
 - **It shows you today.** One screen with the day's plan in time order: places, trains, tickets, with photos and local names (東京スカイツリー, วัดอรุณ) so you can show a driver or read a sign.
